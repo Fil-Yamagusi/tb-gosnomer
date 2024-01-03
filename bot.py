@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.10
 # -*- coding: utf-8 -*-
+
 """
     2023-12-19 Filipp Yamagusi
     Телеграм-бот Лото автомобильных номеров!
@@ -7,6 +8,7 @@
     fil_fc_gosnomer_bot
     https://t.me/fil_fc_gosnomer_bot
 """
+
 # стандартные модули
 from time import time_ns, localtime, strftime
 from sys import getsizeof
