@@ -46,8 +46,8 @@ Users = load_users()
 bot = TeleBot(config.TOKEN)
 
 # Пустое меню, может пригодиться на промежуточных вопросах
-markup_empty = types.ReplyKeyboardMarkup(
-)
+markup_empty = types.ReplyKeyboardMarkup()
+
 
 # Главное меню
 menu_main = {
@@ -545,7 +545,7 @@ def handle_yes_to_save(message: Message):
         Users[user_id]["collection"][action] = {}
     show_users()
 
-    # Если не было этого номера - добавляем
+    # добавляем, если не было этого номера
     if norm_num not in Users[user_id]["collection"][action]:
         Users[user_id]["collection"][action][norm_num] = {}
         dt = time_ns() // (10 ** 9)
